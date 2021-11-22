@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <title>Score Keeper</title>
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-half is-offset-one-quarter">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-3by2">
+                                <img src="https://cdn.dribbble.com/users/134903/screenshots/7038101/media/8515afd18d80839a4bf7660a9957657c.png?compress=1&resize=1600x1200"
+                                    alt="Ping Pong Header Picture">
+                            </figure>
+                        </div>
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                Ping Pong Score Keeper
+                            </p>
+                        </header>
+                        <div class="card-content">
+                            <div class="content">
+                                <h1 class="title is-2" id="score">
+                                    <span id="playerOneScore">0</span>
+                                    to
+                                    <span id="playerTwoScore">0</span>
+                                </h1>
+                                <p>Use the buttons to keep score!</p>
+                                <label for="games" class="label is-normal is-inline"> Play to:
+                                    <div class="select is-rounded is-small">
+                                        <select name="games" id="games">
+                                            <option class="games" value="5">5</option>
+                                            <option class="games" value="11">11</option>
+                                            <option class="games" value="21">21</option>
+                                        </select>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <button id="playerOne" class="is-link button card-footer-item">+1 Player One</button>
+                            <button id="playerTwo" class="is-warning button card-footer-item">+1 Player Two</button>
+                            <button id="reset" class="is-danger button card-footer-item">Reset</button>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="mygame.js"></script>
+</body>
+
+</html>
